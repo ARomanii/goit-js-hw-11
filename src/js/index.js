@@ -86,10 +86,13 @@ function renderImageList(images) {
             </p>
         </div>
     </div>`;
-    })
-    .join('');
-  gallery.innerHTML += markup;
-}
+      
+  gallery.insertAdjacentHTML("beforeend", markup);
+    gallerySimpleLightbox.refresh();
+  });
+  return images;
+  
+};
 
 function cleanGallery() {
   gallery.innerHTML = '';
