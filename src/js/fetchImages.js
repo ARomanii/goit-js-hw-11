@@ -6,6 +6,6 @@ async function fetchImages() {
     return response
   }
   catch {
-    throw new Error("Что-то пошло не так");
+    throw new Error("Все пошло не по плану");
   }
 };
